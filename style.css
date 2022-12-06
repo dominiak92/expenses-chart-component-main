@@ -1,0 +1,234 @@
+.colors {
+color: hsl(10, 79%, 65%),
+hsl(186, 34%, 60%),
+hsl(25, 47%, 15%),
+hsl(28, 10%, 53%),
+hsl(27, 66%, 92%),
+hsl(33, 100%, 98%),
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    min-height: 100vh;
+}
+:root {
+    --section-padding: 6vw;
+}
+.main-wrapper {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4vw;
+padding-top: 8.8vw;
+}
+/* SEKCJA GÓRNA - WRAPPER DO BALANCE */
+.balance {
+    background-color:hsl(10, 79%, 65%);
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--section-padding);
+    height: 26vw;
+    border-radius: 3vw;
+}
+/* WRAPPER DO SALDA */
+.balance-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.balance-head {
+color: hsl(33, 100%, 98%);
+font-size: 3.7vw;
+margin-bottom: 1vw;
+}
+.amount {
+color: hsl(33, 100%, 98%);
+font-size: 6.5vw;
+}
+/* LOGO PRZY BALANCE */
+.logo {
+    height: 12vw;
+    width: 17vw;
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.chart {
+    background-color: hsl(33, 100%, 98%);
+    margin-top: 4vw;
+    border-radius: 2vw;
+    width: 100%;
+    height: 112vw;
+    padding: var(--section-padding);
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.title {
+    font-size: 6.4vw;
+    margin-bottom: 8vw;
+    padding-left: 3vw;
+}
+.bars {
+    position: relative;
+    width: 110vw;
+    height: 55vw;
+}
+.line {
+    margin: 0 auto;
+    width: 95%;
+    height: 2px;
+    background-color: rgb(241, 240, 240);
+    margin-top: 5vw;
+}
+.month-sum {
+    display:flex;
+    margin-top: 4vw;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.this-month {
+color: hsl(28, 10%, 53%);
+padding: 3vw;
+font-size: 3.8vw;
+}
+.tm-sum {
+    color: black;
+    font-size: 8vw;
+}
+.lm-header {
+    color: hsl(28, 10%, 53%);
+    font-size: 3.8vw;
+}
+.lm-sum {
+    font-size: 3.5vw;
+}
+.last-month {
+    padding: 3vw;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+};
+/* media queries */
+
+
+@media (cokolwiek) {}
+@media  (min-width: 992px) {
+        body {
+            margin: 0 auto;
+            font-family: 'DM Sans', sans-serif;
+            background-color: hsl(27, 66%, 92%);
+            min-height: 100vh;
+        }
+        :root {
+            --section-padding: 2.2vw;
+        }
+        .main-wrapper {
+        padding: 1vw;
+        margin: 0 auto;
+        width: 39.5vw;
+        padding-top: 1.4vw;
+        }
+        /* SEKCJA GÓRNA - WRAPPER DO BALANCE */
+        .balance {
+            background-color:hsl(10, 79%, 65%);
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--section-padding);
+            height: 8.7vw;
+            border-radius: 1.4vw;
+        }
+        /* WRAPPER DO SALDA */
+        .balance-total {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .balance-head {
+        color: hsl(33, 100%, 98%);
+        font-size: 1.2vw;
+        margin-bottom: 1vw;
+        }
+        .amount {
+        color: hsl(33, 100%, 98%);
+        font-size: 2.2vw;
+        }
+        /* LOGO PRZY BALANCE */
+        .logo {
+            background-image: url(images/logo.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 3.5vw;
+            width: 5.6vw;
+        }
+        .chart {
+            background-color: hsl(33, 100%, 98%);
+            margin-top: 1.6vw;
+            border-radius: 1.2vw;
+            width: 100%;
+            height: 35.5vw;
+            padding: var(--section-padding);
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+        .title {
+            font-size: 2.2vw;
+            margin-bottom: 2vw;
+            padding-left: 0vw;
+        }
+        .bars {
+            position: relative;
+            width: 45vw;
+            height: 15vw;
+        }
+        .line {
+            margin: 0 auto;
+            width: 95%;
+            height: 2px;
+            background-color: rgb(241, 240, 240);
+            margin-top: 2.3vw;
+        }
+        .month-sum {
+            display:flex;
+            margin-top: 1.3vw;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .this-month {
+        color: hsl(28, 10%, 53%);
+        padding: 0vw;
+        margin-top: 1vw;
+        font-size: 1.2vw;
+        }
+        .tm-sum {
+            color: black;
+            font-size: 3.4vw;
+        }
+        .lm-header {
+            color: hsl(28, 10%, 53%);
+            font-size: 1.2vw;
+        }
+        .lm-sum {
+            font-size: 1.3vw;
+        }
+        .last-month {
+            padding: 0vw;
+            padding-bottom: 0.5vw;
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+        };
+      }
+      

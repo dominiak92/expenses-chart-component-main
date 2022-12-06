@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <section class="balance">
+        <div class="balance-total">
+          <div class="balance-head">My balance</div>
+          <div class="amount"><p>$921.48</p></div>
+        </div>
+        <div class="logo"></div>
+      </section>
+      <section class="chart">
+        <div class="title">Spending - Last 7 days</div>
+        <section class="bars"><canvas id="myChart"></canvas></section>
+        <div class="line"></div>
+        <section class="month-sum">
+          <div class="this-month">
+            <div class="tm-header">Total this month</div>
+            <div class="tm-sum"><p>$478.33</p></div>
+          </div>
+          <div class="last-month">
+            <div class="lm-sum">+2.4%</div>
+            <div class="lm-header">from last month</div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
