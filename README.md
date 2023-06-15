@@ -1,6 +1,4 @@
-# Frontend Mentor - Expenses chart component solution
-
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Expenses chart component
 
 ## Table of contents
 
@@ -20,7 +18,6 @@ Users should be able to:
 - See the current day’s bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device’s screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Links
 
@@ -38,4 +35,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@sebix0nus](https://www.frontendmentor.io/profile/sebix0nus)
+- [Sebastian Dominiak](https://www.sebastiandominiak.pl)
